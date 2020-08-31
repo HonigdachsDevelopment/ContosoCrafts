@@ -1,9 +1,14 @@
+using ContosoCrafts.WebSite.Controllers;
 using ContosoCrafts.WebSite.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Collections.Generic;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace ContosoCrafts.WebSite
 {
@@ -25,6 +30,9 @@ namespace ContosoCrafts.WebSite
 
             // register our JsonFileproductService t
             services.AddTransient<JsonFileProductService>();
+            // register Controllers
+
+            services.AddControllers();
 
         }
 
@@ -52,6 +60,18 @@ namespace ContosoCrafts.WebSite
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                // Map Controller Endpoints
+                endpoints.MapControllers();
+
+                /**
+                 * INSTEAD OF THIS SHIZZLE CREATE CONTROLLER AND REGISTER
+                 */
+                //endpoints.MapGet("/products", (context) =>
+                //{
+                //    var products = app.ApplicationServices.GetService<JsonFileProductService>().GetProducts();
+                //    var json = JsonSerializer.Serialize<IEnumerable<Models.Product>>(products);
+                //    return context.Response.WriteAsync(json);
+                //});
             });
         }
     }
