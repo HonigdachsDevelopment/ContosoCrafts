@@ -1,14 +1,18 @@
-using ContosoCrafts.WebSite.Controllers;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.Json;
+using System.Threading.Tasks;
+using ContosoCrafts.WebSite.Components;
+using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System.Collections.Generic;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace ContosoCrafts.WebSite
 {
@@ -27,11 +31,13 @@ namespace ContosoCrafts.WebSite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-
+            // inject Blazor Dependency
+            services.AddServerSideBlazor();
+           
             // register our JsonFileproductService t
             services.AddTransient<JsonFileProductService>();
-            // register Controllers
-
+            // register Controllers and HttpClient for API
+            services.AddHttpClient();
             services.AddControllers();
 
         }
@@ -62,6 +68,8 @@ namespace ContosoCrafts.WebSite
                 endpoints.MapRazorPages();
                 // Map Controller Endpoints
                 endpoints.MapControllers();
+                // Map Blazor Components
+                endpoints.MapBlazorHub();
 
                 /**
                  * INSTEAD OF THIS SHIZZLE CREATE CONTROLLER AND REGISTER

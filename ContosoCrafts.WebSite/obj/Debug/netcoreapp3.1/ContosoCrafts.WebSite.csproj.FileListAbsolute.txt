@@ -705,3 +705,7 @@ C:\Daten\ASP101\ContosoCrafts\ContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\Cont
 C:\Daten\ASP101\ContosoCrafts\ContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\ContosoCrafts.WebSite.pdb
 C:\Daten\ASP101\ContosoCrafts\ContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\ContosoCrafts.WebSite.genruntimeconfig.cache
 C:\Daten\ASP101\ContosoCrafts\ContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\Razor\Index.cshtml.g.cs
+C:\Daten\ASP101\ContosoCrafts\ContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\ContosoCrafts.WebSite.RazorComponent.input.cache
+C:\Daten\ASP101\ContosoCrafts\ContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\ProductList.razor.g.cs
+C:\Daten\ASP101\ContosoCrafts\ContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\RazorDeclaration\ContosoCrafts.WebSite.dll
+C:\Daten\ASP101\ContosoCrafts\ContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\Razor\Components\ProductList.razor.g.cs
