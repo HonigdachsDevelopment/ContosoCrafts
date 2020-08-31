@@ -4,7 +4,15 @@
     ViewData["Title"] = "Home page";
 }
 
+<!-- web content display upper the directive to declare as diplayable content page, the related c# Model and the Name of the page-->
+
 <div class="text-center">
     <h1 class="display-4">START BLINKING</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+@foreach (var product in Model.Products)
+{
+    <h2>
+        @product.Title;
+    </h2>
+}

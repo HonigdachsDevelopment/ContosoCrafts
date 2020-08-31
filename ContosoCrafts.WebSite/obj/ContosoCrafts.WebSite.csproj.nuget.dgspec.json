@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Daten\\ASP101\\ContosoCrafts.WebSite\\ContosoCrafts.WebSite\\ContosoCrafts.WebSite.csproj": {}
+    "C:\\Daten\\ASP101\\ContosoCrafts\\ContosoCrafts.WebSite\\ContosoCrafts.WebSite.csproj": {}
   },
   "projects": {
-    "C:\\Daten\\ASP101\\ContosoCrafts.WebSite\\ContosoCrafts.WebSite\\ContosoCrafts.WebSite.csproj": {
+    "C:\\Daten\\ASP101\\ContosoCrafts\\ContosoCrafts.WebSite\\ContosoCrafts.WebSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Daten\\ASP101\\ContosoCrafts.WebSite\\ContosoCrafts.WebSite\\ContosoCrafts.WebSite.csproj",
+        "projectUniqueName": "C:\\Daten\\ASP101\\ContosoCrafts\\ContosoCrafts.WebSite\\ContosoCrafts.WebSite.csproj",
         "projectName": "ContosoCrafts.WebSite",
-        "projectPath": "C:\\Daten\\ASP101\\ContosoCrafts.WebSite\\ContosoCrafts.WebSite\\ContosoCrafts.WebSite.csproj",
+        "projectPath": "C:\\Daten\\ASP101\\ContosoCrafts\\ContosoCrafts.WebSite\\ContosoCrafts.WebSite.csproj",
         "packagesPath": "C:\\Users\\pfoitzik\\.nuget\\packages\\",
-        "outputPath": "C:\\Daten\\ASP101\\ContosoCrafts.WebSite\\ContosoCrafts.WebSite\\obj\\",
+        "outputPath": "C:\\Daten\\ASP101\\ContosoCrafts\\ContosoCrafts.WebSite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
