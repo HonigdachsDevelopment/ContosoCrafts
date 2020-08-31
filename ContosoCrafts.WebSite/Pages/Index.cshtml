@@ -1,18 +1,32 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Products";
 }
 
 <!-- web content display upper the directive to declare as diplayable content page, the related c# Model and the Name of the page-->
+<div class="container-fluid">
 
-<div class="text-center">
-    <h1 class="display-4">START BLINKING</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="text-center">
+        <h4 class="display-4">START BLINKING</h4>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+
+    <div class="card-columns" style="display: inline-block">
+
+        @foreach (var product in Model.Products)
+        {
+            <div class="card" id="products">
+                <div class="card-img" style="background-image: url('@product.Image'); "></div>
+                <div class="card-body">
+                    <h5 class="card-title"> @product.Title;</h5>
+                    <p class="card-text">@product.Description</p>
+                </div>
+            </div>
+            <h2>
+            </h2>
+        }
+
+
+    </div>
 </div>
-@foreach (var product in Model.Products)
-{
-    <h2>
-        @product.Title;
-    </h2>
-}

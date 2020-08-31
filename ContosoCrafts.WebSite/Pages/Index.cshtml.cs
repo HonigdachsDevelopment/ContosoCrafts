@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using ContosoCrafts.WebSite.Models;
+using ContosoCrafts.WebSite.Services;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using ContosoCrafts.WebSite.Services;
-using ContosoCrafts.WebSite.Models;
+using System.Collections.Generic;
 
 namespace ContosoCrafts.WebSite.Pages
 {

@@ -1,0 +1,20 @@
+﻿
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #252152;
+    border-color: #252152;
+
+    &:hover {
+        color: #fff;
+        background-color: #e9a8a6;
+        border-color: #e9a8a6;
+    }
+}
+
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
